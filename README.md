@@ -59,11 +59,11 @@ Step before deploy app engine and cloud run
 	 ```
  6. Create tag to Artifact Registry
 	 ```
-	 docker tag <image_name>:<tag> <location>-docker.pkg.dev/<project_id>/<repository_name>:<tag>
+	 docker tag <image_name>:<tag> <location>-docker.pkg.dev/<project_id>/<repository_name>/<image_name>:<tag>
 	 ```
  7. Push docker image to artifact registry
 	```
-	docker push <location>-docker.pkg.dev/<project_id>/<repository_name>:<tag>
+	docker push <location>-docker.pkg.dev/<project_id>/<repository_name>/<image_name>:<tag>
 	```
  8. Deploy cloud run by pull docker image from artifact registry
 	 ```
