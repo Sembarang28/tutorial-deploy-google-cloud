@@ -67,9 +67,6 @@ Step before deploy app engine and cloud run
 	```
  8. Deploy cloud run by pull docker image from artifact registry
 	 ```
-	 gcloud run deploy <service-name> \ 
-		 --image <image-uri> \ 
-		 --region <region> \ 
-		 --platform managed
+	 gcloud run deploy <service-name> --image <image-uri>
 	 ```
  9. Test your app
